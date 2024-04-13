@@ -1,0 +1,79 @@
+<body>
+    <input type=" text "></br>
+    <div>
+        <h1>Default:</h1>
+        <span id="default"></span>
+    </div>
+    <div>
+        <h1>Debounce:</h1>
+        <span id="debounce"></span>
+    </div>
+    <div>
+        <h1>Throttle:</h1>
+        <span id="throttle"></span>
+    </div>
+
+
+</body>
+
+
+<style>
+    body {
+        width: 100%;
+        /*   border: 1px solid  */
+    }
+
+    input {
+        margin-top: 40px;
+        height: 30px;
+        width: 300px;
+        font-size: 20px;
+    }
+</style>
+
+
+<script>
+    let input = document.getElementsByTagName("input")[0];
+    let defaultText = document.getElementById("default");
+    let debounceText = document.getElementById("debounce");
+    let throttleText = document.getElementById("throttle");
+
+    const updatDebounceText = debounce(text => {
+        debounceText.textContent = text;
+    })
+
+    const updateThrottleText = throttle(text => {
+        throttleText.textContent = text;
+    })
+
+    input.addEventListener("input", e => {
+        defaultText.textContent = e.target.value;
+        updatDebounceText(e.target.value);
+        updateThrottleText(e.target.value);
+    })
+
+    function debounce(cb, delay = 1000) {
+        let timeOut;
+        return (...args) => {
+            clearTimeout(timeOut);
+            timeOut = setTimeout(() => {
+                cb(...args);
+            }, delay);
+        }
+    }
+
+    function throttle(cb, delay = 1000) {
+        let shouldWait = false;
+
+        return (...args) => {
+            if (shouldWait) return
+
+            cb(...args)
+            shouldWait = true;
+
+            setTimeout(() => {
+                shouldWait = false;
+            }, delay);
+        }
+    }
+</script>

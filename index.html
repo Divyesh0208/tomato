@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="layout">
+        <!-- navbar section -->
+        <section id="navbar" class="navbar">
+            <div class="navbar_logo_and_search">
+                <img class="navbar_logo" src="./assets/logo.avif">
+                <div class="navbar_search_box">
+
+
+                    <div id="navbar_search_box_address" class="navbar_search_box_address">
+                        <img class="navbar_location_svg" src="./assets/location.svg"></img>
+                        <input id="navbar_address_search_input" class="navbar_address_search_input"
+                            placeholder="SDF 7 SEEPZ, Cross Road C, Marol MIDC Industry Estate, Andheri East, Mumbai, Maharashtra, India"
+                            type="text">
+                        <img id="navbar_down_angle_svg" class="navbar_down_angle_svg" src="./assets/triangle.svg">
+
+                        <!-- address-popup -->
+                        <div id="navbar_address_popup1" class="navbar_address_search_popup1">
+
+                            <div class="navbar_detect_location navbar_popup_hover">
+                                <div class="navbar_detect_text">
+                                    <img class="navbar_detect_location_svg" src="./assets/current-location.svg">
+                                    <p class="navbar_detect_text1">Detect current location</p>
+                                </div>
+                                <p class="navbar_detect_text2">Using Gps</p>
+                            </div>
+                            <div class="navbar_address_search_popup_seperator"></div>
+
+                            <div class="navbar_detect_location_recent">
+                                <h3 class="navbar_detect_location_recent_head">Recent Locations</h3>
+                                <div class="navbar_detect_location_recent_address navbar_popup_hover">
+                                    <img class="navbar_detect_location_recent_address_svg" src="./assets/clock.svg">
+                                    <p class="navbar_detect_location_recent_address_text">Carmel Cluster, Godrej Garden
+                                        City, Chandkheda, Ahmedabad</p>
+                                </div>
+                                <div class="navbar_address_search_popup_seperator"></div>
+                                <div class="navbar_detect_location_recent_address navbar_popup_hover">
+                                    <img class="navbar_detect_location_recent_address_svg" src="./assets/clock.svg">
+                                    <p class="navbar_detect_location_recent_address_text">Carmel Cluster, Godrej Garden
+                                        City, Chandkheda, Ahmedabad</p>
+                                </div>
+                                <div class="navbar_address_search_popup_seperator"></div>
+                                <div class="navbar_detect_location_recent_address navbar_popup_hover">
+                                    <img class="navbar_detect_location_recent_address_svg" src="./assets/clock.svg">
+                                    <p class="navbar_detect_location_recent_address_text">Carmel Cluster, Godrej Garden
+                                        City, Chandkheda, Ahmedabad</p>
+                                </div>
+                                <div class="navbar_address_search_popup_seperator"></div>
+                            </div>
+                        </div>
+
+                        <div id="navbar_address_popup2" class="navbar_address_search_popup2 ">
+                            <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                                <p class="navbar_address_search_popup2_text_h">Surat</p>
+                                <p class="navbar_address_search_popup2_text_p">India</p>
+                            </div>
+                            <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                                <p class="navbar_address_search_popup2_text_h">Surat Mill</p>
+                                <p class="navbar_address_search_popup2_text_p">Hanumansingh Rd, Jahangirpura, Asarwa,
+                                    Ahmedabad, Gujarat</p>
+                            </div>
+                            <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                                <p class="navbar_address_search_popup2_text_h">Surat Station</p>
+                                <p class="navbar_address_search_popup2_text_p">Railway Station Circle, Sufi Baug,
+                                    Railway Station Area, Varachha, Surat, Gujarat, India, India</p>
+                            </div>
+                            <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                                <p class="navbar_address_search_popup2_text_h">Surat</p>
+                                <p class="navbar_address_search_popup2_text_p">India</p>
+                            </div>
+                            <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                                <p class="navbar_address_search_popup2_text_h">Surat</p>
+                                <p class="navbar_address_search_popup2_text_p">India</p>
+                            </div>
+                            <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                                <p class="navbar_address_search_popup2_text_h">Surat</p>
+                                <p class="navbar_address_search_popup2_text_p">India</p>
+                            </div>
+                            <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                                <p class="navbar_address_search_popup2_text_h">Surat</p>
+                                <p class="navbar_address_search_popup2_text_p">India</p>
+                            </div>
+                            <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                                <p class="navbar_address_search_popup2_text_h">Surat</p>
+                                <p class="navbar_address_search_popup2_text_p">India</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="vertical_divider"></div>
+
+
+                    <div class="navbar_search_box_food">
+                        <img id="navbar_search_svg" class="navbar_search_svg" src="./assets/search.svg">
+                        <input id="navbar_food" class="navbar_food"
+                            placeholder="Search for restaurant, cuisine or a dish" type="text">
+                        <div id="navbar_food_popup" class="navbar_search_box_food_popup">
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza1.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Pizza - Delivery</p>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza2.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Veg Pizza - Delivery</p>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza7.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Pizza Hut</p>
+                                    <div class="navbar_search_box_food_popup_content_text_typ">
+                                        <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                            <div class="navbar_rating">
+                                                <p>3.1</p>
+                                                <img src="./assets/star.svg" alt="">
+                                            </div>
+                                            <p>DINING</p>
+                                        </div>
+                                        <div class="vertical_divider"></div>
+                                        <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                            <div class="navbar_rating">
+                                                <p>3.5</p>
+                                                <img src="./assets/star.svg" alt="">
+                                            </div>
+                                            <P>DELIVERY</P>
+                                        </div>
+                                    </div>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Marol, Mumbai</p>
+                                    <div class="navbar_search_box_food_popup_content_text_order">
+                                        <div class="navbar_search_box_food_popup_content_text_order_now">
+                                            <p>Order Now</p>
+                                            <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                                src="./assets/pinktriangle.svg">
+                                        </div>
+                                        <div class="navbar_search_box_food_popup_content_text_order_view">
+                                            <p>View all outlets</p>
+                                            <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                                src="./assets/pinktriangle.svg">
+                                        </div>
+                                    </div>
+                                    <div class="navbar_search_box_food_popup_content_delivery">Delivery in 22min</div>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza7.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Pizza Hut</p>
+                                    <div class="navbar_search_box_food_popup_content_text_typ">
+                                        <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                            <div class="navbar_rating">
+                                                <p>3.1</p>
+                                                <img src="./assets/star.svg" alt="">
+                                            </div>
+                                            <p>DINING</p>
+                                        </div>
+                                        <div class="vertical_divider"></div>
+                                        <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                            <div class="navbar_rating">
+                                                <p>3.5</p>
+                                                <img src="./assets/star.svg" alt="">
+                                            </div>
+                                            <P>DELIVERY</P>
+                                        </div>
+                                    </div>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Marol, Mumbai</p>
+                                    <div class="navbar_search_box_food_popup_content_text_order">
+                                        <div class="navbar_search_box_food_popup_content_text_order_now">
+                                            <p>Order Now</p>
+                                            <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                                src="./assets/pinktriangle.svg">
+                                        </div>
+                                        <div class="navbar_search_box_food_popup_content_text_order_view">
+                                            <p>View all outlets</p>
+                                            <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                                src="./assets/pinktriangle.svg">
+                                        </div>
+                                    </div>
+                                    <div class="navbar_search_box_food_popup_content_delivery">Delivery in 22min</div>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza7.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Pizza Hut</p>
+                                    <div class="navbar_search_box_food_popup_content_text_typ">
+                                        <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                            <div class="navbar_rating">
+                                                <p>3.1</p>
+                                                <img src="./assets/star.svg" alt="">
+                                            </div>
+                                            <p>DINING</p>
+                                        </div>
+                                        <div class="vertical_divider"></div>
+                                        <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                            <div class="navbar_rating">
+                                                <p>3.5</p>
+                                                <img src="./assets/star.svg" alt="">
+                                            </div>
+                                            <P>DELIVERY</P>
+                                        </div>
+                                    </div>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Marol, Mumbai</p>
+                                    <div class="navbar_search_box_food_popup_content_text_order">
+                                        <div class="navbar_search_box_food_popup_content_text_order_now">
+                                            <p>Order Now</p>
+                                            <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                                src="./assets/pinktriangle.svg">
+                                        </div>
+                                        <div class="navbar_search_box_food_popup_content_text_order_view">
+                                            <p>View all outlets</p>
+                                            <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                                src="./assets/pinktriangle.svg">
+                                        </div>
+                                    </div>
+                                    <div class="navbar_search_box_food_popup_content_delivery">Delivery in 22min</div>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza7.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Pizza Hut</p>
+                                    <div class="navbar_search_box_food_popup_content_text_typ">
+                                        <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                            <div class="navbar_rating">
+                                                <p>3.1</p>
+                                                <img src="./assets/star.svg" alt="">
+                                            </div>
+                                            <p>DINING</p>
+                                        </div>
+                                        <div class="vertical_divider"></div>
+                                        <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                            <div class="navbar_rating">
+                                                <p>3.5</p>
+                                                <img src="./assets/star.svg" alt="">
+                                            </div>
+                                            <P>DELIVERY</P>
+                                        </div>
+                                    </div>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Marol, Mumbai</p>
+                                    <div class="navbar_search_box_food_popup_content_text_order">
+                                        <div class="navbar_search_box_food_popup_content_text_order_now">
+                                            <p>Order Now</p>
+                                            <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                                src="./assets/pinktriangle.svg">
+                                        </div>
+                                        <div class="navbar_search_box_food_popup_content_text_order_view">
+                                            <p>View all outlets</p>
+                                            <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                                src="./assets/pinktriangle.svg">
+                                        </div>
+                                    </div>
+                                    <div class="navbar_search_box_food_popup_content_delivery">Delivery in 22min</div>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza3.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Paneer Pizza - Delivery</p>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza4.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Chicken Pizza - Delivery</p>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza4.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Margherita Pizza - Delivery
+                                    </p>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                                </div>
+                            </div>
+                            <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                                <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza4.avif">
+                                <div class="navbar_search_box_food_popup_content_text">
+                                    <p class="navbar_search_box_food_popup_content_text_h">Pizza On My Mind</p>
+                                    <p class="navbar_search_box_food_popup_content_text_p">Collection</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="navbar_buttons">
+                <button id="navbar_login" class="navbar_login">Log in</button>
+                <button id="navbar_signup" class="navbar_signup">Sign up</button>
+                <p class="navbar_use_app">
+                    Use App
+                </p>
+                <div class="navbar_user_div" onclick="onUserClick()">
+                    <img class="navbar_user_svg" src="./assets/user.svg" alt="user">
+                </div>
+            </div>
+        </section>
+
+        <div id="login_overlay" class="login_overlay">
+
+            <div class="login_modal">
+                <div class="signup_modal_head">
+                    <p>Login</p>
+                    <img id="login_close_svg" src="./assets/close.svg">
+                </div>
+
+                <div class="mobile_field">
+                    <div class="country_code_field">
+                        <img class="country_flag" src="./assets/india.webp">
+                        <p class="country_code">+91</p>
+                        <img id="show_countries_svg" src="./assets/down-arrow.svg" alt="">
+
+                        <div class="country_list_popup">
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/india.webp">
+                                <p class="country_name">India</p>
+                                <p class="country_list_popup_ccode">+91</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/afghanistan.webp">
+                                <p class="country_name">Afghanistan</p>
+                                <p class="country_list_popup_ccode">+93</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/australia.png">
+                                <p class="country_name">Australia</p>
+                                <p class="country_list_popup_ccode">+61</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/bangladesh.webp">
+                                <p class="country_name">Bangladesh</p>
+                                <p class="country_list_popup_ccode">+880</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/denmark.png">
+                                <p class="country_name">Denmark</p>
+                                <p class="country_list_popup_ccode">+45</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/argentina.webp">
+                                <p class="country_name">Argentina</p>
+                                <p class="country_list_popup_ccode">+54</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/canada.webp">
+                                <p class="country_name">Canada</p>
+                                <p class="country_list_popup_ccode">+1</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/dominica.png">
+                                <p class="country_name">Dominica</p>
+                                <p class="country_list_popup_ccode">+1767</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/egypt.webp">
+                                <p class="country_name">Egypt</p>
+                                <p class="country_list_popup_ccode">+20</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/georgia.png">
+                                <p class="country_name">Georgia</p>
+                                <p class="country_list_popup_ccode">+995</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/germany.png">
+                                <p class="country_name">Germany</p>
+                                <p class="country_list_popup_ccode">+49</p>
+                            </div>
+                            <div class="list_popup_country_detail">
+                                <img class="country_flag country_list_popup_flag" src="./assets/greece.png">
+                                <p class="country_name">greece</p>
+                                <p class="country_list_popup_ccode">+30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input class="login_mobile_no" placeholder="Phone" type="number">
+                </div>
+                <p id="login_mobile_error" style="color: #d64155; font-size: 11px; margin-top: 2px; display: none;">
+                    Invalid Phone Number</p>
+                <button class="login_modal_send_otp"> Send One Time Password </button>
+
+                <div class="signin_seperator">
+                    <p>or</p>
+                </div>
+
+                <button class="login_email_btn">
+                    <img src="./assets/email.svg">
+                    Continue with Email
+                </button>
+
+                <button class="google_signin_btn">
+                    <img class="" src="./assets/google.svg">
+                    Sign in with Google
+                </button>
+                <br>
+                <div class="signin_seperator"></div>
+
+                <p class="login_modal_new_signin">New to Tomato? &nbsp;<a href="#">Create account</a></p>
+
+            </div>
+
+        </div>
+
+        <div id="signup_overlay" class="signup_overlay">
+            <div class="signup_modal">
+                <div class="signup_modal_head">
+                    <p>Sign up</p>
+                    <img id="signup_close_svg" src="./assets/close.svg">
+                </div>
+
+                <div id="full_name_form_group" class="form__group">
+                    <input id="full_name_input" type="text" class="form__field" placeholder="Full Name">
+                    <label id="full_name_label" class="form__label">Full Name</label>
+                    <p id="signup_name_error" style="color: #d64155; font-size: 11px; margin-top: 2px; display: none;">
+                        Please enter Full Name</p>
+                </div>
+
+                <div id="email_form_group" class="form__group">
+                    <input id="email_input" type="email" class="form__field" placeholder="Email">
+                    <label id="email_label" class="form__label">Email</label>
+                    <p id="signup_email_error" style="color: #d64155; font-size: 11px; margin-top: 2px; display: none;">
+                        Please enter valid Email</p>
+                </div>
+
+                <div class="signin_policy">
+                    <input class="signin_policy_checkbox" type="checkbox">
+                    <p>I agree to zomato's&nbsp;<a href="#">Terms of Service</a>,&nbsp;<a href="#">Privacy
+                            Policy</a>&nbsp;and&nbsp;<a href="#">Content
+                            Policies</a></p>
+                </div>
+
+                <button id="create_acc_btn" class="create_acc_btn" disabled onclick="createAccount()">Create
+                    account</button>
+
+                <div class="signin_seperator">
+                    <p>or</p>
+                </div>
+
+                <button class="google_signin_btn">
+                    <img class="" src="./assets/google.svg">
+                    Sign in with Google
+                </button>
+
+                <div class="signin_seperator"></div>
+
+                <p class="already_have_account_text">Already have an account? &nbsp;<a href="#">Log in</a></p>
+
+            </div>
+        </div>
+
+
+        <section class="navbar_search_box_tab_section">
+            <div class="navbar_search_box_tab">
+
+                <div id="navbar_search_box_address" class="navbar_search_box_address">
+                    <img class="navbar_location_svg" src="./assets/location.svg"></img>
+                    <input id="navbar_address_search_input" class="navbar_address_search_input"
+                        placeholder="SDF 7 SEEPZ, Cross Road C, Marol MIDC Industry Estate, Andheri East, Mumbai, Maharashtra, India"
+                        type="text">
+                    <img src="./assets/triangle.svg">
+
+                    <!-- address-popup -->
+                    <div id="navbar_address_popup1" class="navbar_address_search_popup1">
+
+                        <div class="navbar_detect_location navbar_popup_hover">
+                            <div class="navbar_detect_text">
+                                <img class="navbar_detect_location_svg" src="./assets/current-location.svg">
+                                <p class="navbar_detect_text1">Detect current location</p>
+                            </div>
+                            <p class="navbar_detect_text2">Using Gps</p>
+                        </div>
+                        <div class="navbar_address_search_popup_seperator"></div>
+
+                        <div class="navbar_detect_location_recent">
+                            <h3 class="navbar_detect_location_recent_head">Recent Locations</h3>
+                            <div class="navbar_detect_location_recent_address navbar_popup_hover">
+                                <img class="navbar_detect_location_recent_address_svg" src="./assets/clock.svg">
+                                <p class="navbar_detect_location_recent_address_text">Carmel Cluster, Godrej Garden
+                                    City, Chandkheda, Ahmedabad</p>
+                            </div>
+                            <div class="navbar_address_search_popup_seperator"></div>
+                            <div class="navbar_detect_location_recent_address navbar_popup_hover">
+                                <img class="navbar_detect_location_recent_address_svg" src="./assets/clock.svg">
+                                <p class="navbar_detect_location_recent_address_text">Carmel Cluster, Godrej Garden
+                                    City, Chandkheda, Ahmedabad</p>
+                            </div>
+                            <div class="navbar_address_search_popup_seperator"></div>
+                            <div class="navbar_detect_location_recent_address navbar_popup_hover">
+                                <img class="navbar_detect_location_recent_address_svg" src="./assets/clock.svg">
+                                <p class="navbar_detect_location_recent_address_text">Carmel Cluster, Godrej Garden
+                                    City, Chandkheda, Ahmedabad</p>
+                            </div>
+                            <div class="navbar_address_search_popup_seperator"></div>
+                        </div>
+                    </div>
+
+                    <div id="navbar_address_popup2" class="navbar_address_search_popup2 ">
+                        <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                            <p class="navbar_address_search_popup2_text_h">Surat</p>
+                            <p class="navbar_address_search_popup2_text_p">India</p>
+                        </div>
+                        <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                            <p class="navbar_address_search_popup2_text_h">Surat Mill</p>
+                            <p class="navbar_address_search_popup2_text_p">Hanumansingh Rd, Jahangirpura, Asarwa,
+                                Ahmedabad, Gujarat</p>
+                        </div>
+                        <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                            <p class="navbar_address_search_popup2_text_h">Surat Station</p>
+                            <p class="navbar_address_search_popup2_text_p">Railway Station Circle, Sufi Baug,
+                                Railway Station Area, Varachha, Surat, Gujarat, India, India</p>
+                        </div>
+                        <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                            <p class="navbar_address_search_popup2_text_h">Surat</p>
+                            <p class="navbar_address_search_popup2_text_p">India</p>
+                        </div>
+                        <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                            <p class="navbar_address_search_popup2_text_h">Surat</p>
+                            <p class="navbar_address_search_popup2_text_p">India</p>
+                        </div>
+                        <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                            <p class="navbar_address_search_popup2_text_h">Surat</p>
+                            <p class="navbar_address_search_popup2_text_p">India</p>
+                        </div>
+                        <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                            <p class="navbar_address_search_popup2_text_h">Surat</p>
+                            <p class="navbar_address_search_popup2_text_p">India</p>
+                        </div>
+                        <div class="navbar_address_search_popup2_text navbar_popup_hover">
+                            <p class="navbar_address_search_popup2_text_h">Surat</p>
+                            <p class="navbar_address_search_popup2_text_p">India</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="vertical_divider"></div>
+                <div class="navbar_search_box_food">
+                    <img class="navbar_search_svg" src="./assets/search.svg">
+                    <input class="navbar_food" placeholder="Search for restaurant, cuisine or a dish" type="text">
+                    <div class="navbar_search_box_food_popup">
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza1.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Pizza - Delivery</p>
+                                <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza2.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Veg Pizza - Delivery</p>
+                                <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza7.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Pizza Hut</p>
+                                <div class="navbar_search_box_food_popup_content_text_typ">
+                                    <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                        <div class="navbar_rating">
+                                            <p>3.1</p>
+                                            <img src="./assets/star.svg" alt="">
+                                        </div>
+                                        <p>DINING</p>
+                                    </div>
+                                    <div class="vertical_divider"></div>
+                                    <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                        <div class="navbar_rating">
+                                            <p>3.5</p>
+                                            <img src="./assets/star.svg" alt="">
+                                        </div>
+                                        <P>DELIVERY</P>
+                                    </div>
+                                </div>
+                                <p class="navbar_search_box_food_popup_content_text_p">Marol, Mumbai</p>
+                                <div class="navbar_search_box_food_popup_content_text_order">
+                                    <div class="navbar_search_box_food_popup_content_text_order_now">
+                                        <p>Order Now</p>
+                                        <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                            src="./assets/pinktriangle.svg">
+                                    </div>
+                                    <div class="navbar_search_box_food_popup_content_text_order_view">
+                                        <p>View all outlets</p>
+                                        <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                            src="./assets/pinktriangle.svg">
+                                    </div>
+                                </div>
+                                <div class="navbar_search_box_food_popup_content_delivery">Delivery in 22min</div>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza7.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Pizza Hut</p>
+                                <div class="navbar_search_box_food_popup_content_text_typ">
+                                    <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                        <div class="navbar_rating">
+                                            <p>3.1</p>
+                                            <img src="./assets/star.svg" alt="">
+                                        </div>
+                                        <p>DINING</p>
+                                    </div>
+                                    <div class="vertical_divider"></div>
+                                    <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                        <div class="navbar_rating">
+                                            <p>3.5</p>
+                                            <img src="./assets/star.svg" alt="">
+                                        </div>
+                                        <P>DELIVERY</P>
+                                    </div>
+                                </div>
+                                <p class="navbar_search_box_food_popup_content_text_p">Marol, Mumbai</p>
+                                <div class="navbar_search_box_food_popup_content_text_order">
+                                    <div class="navbar_search_box_food_popup_content_text_order_now">
+                                        <p>Order Now</p>
+                                        <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                            src="./assets/pinktriangle.svg">
+                                    </div>
+                                    <div class="navbar_search_box_food_popup_content_text_order_view">
+                                        <p>View all outlets</p>
+                                        <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                            src="./assets/pinktriangle.svg">
+                                    </div>
+                                </div>
+                                <div class="navbar_search_box_food_popup_content_delivery">Delivery in 22min</div>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza7.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Pizza Hut</p>
+                                <div class="navbar_search_box_food_popup_content_text_typ">
+                                    <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                        <div class="navbar_rating">
+                                            <p>3.1</p>
+                                            <img src="./assets/star.svg" alt="">
+                                        </div>
+                                        <p>DINING</p>
+                                    </div>
+                                    <div class="vertical_divider"></div>
+                                    <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                        <div class="navbar_rating">
+                                            <p>3.5</p>
+                                            <img src="./assets/star.svg" alt="">
+                                        </div>
+                                        <P>DELIVERY</P>
+                                    </div>
+                                </div>
+                                <p class="navbar_search_box_food_popup_content_text_p">Marol, Mumbai</p>
+                                <div class="navbar_search_box_food_popup_content_text_order">
+                                    <div class="navbar_search_box_food_popup_content_text_order_now">
+                                        <p>Order Now</p>
+                                        <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                            src="./assets/pinktriangle.svg">
+                                    </div>
+                                    <div class="navbar_search_box_food_popup_content_text_order_view">
+                                        <p>View all outlets</p>
+                                        <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                            src="./assets/pinktriangle.svg">
+                                    </div>
+                                </div>
+                                <div class="navbar_search_box_food_popup_content_delivery">Delivery in 22min</div>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza7.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Pizza Hut</p>
+                                <div class="navbar_search_box_food_popup_content_text_typ">
+                                    <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                        <div class="navbar_rating">
+                                            <p>3.1</p>
+                                            <img src="./assets/star.svg" alt="">
+                                        </div>
+                                        <p>DINING</p>
+                                    </div>
+                                    <div class="vertical_divider"></div>
+                                    <div class="navbar_search_box_food_popup_content_text_typ_d">
+                                        <div class="navbar_rating">
+                                            <p>3.5</p>
+                                            <img src="./assets/star.svg" alt="">
+                                        </div>
+                                        <P>DELIVERY</P>
+                                    </div>
+                                </div>
+                                <p class="navbar_search_box_food_popup_content_text_p">Marol, Mumbai</p>
+                                <div class="navbar_search_box_food_popup_content_text_order">
+                                    <div class="navbar_search_box_food_popup_content_text_order_now">
+                                        <p>Order Now</p>
+                                        <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                            src="./assets/pinktriangle.svg">
+                                    </div>
+                                    <div class="navbar_search_box_food_popup_content_text_order_view">
+                                        <p>View all outlets</p>
+                                        <img class="navbar_search_box_food_triangle_svg" style="rotate: 270deg;"
+                                            src="./assets/pinktriangle.svg">
+                                    </div>
+                                </div>
+                                <div class="navbar_search_box_food_popup_content_delivery">Delivery in 22min</div>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza3.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Paneer Pizza - Delivery</p>
+                                <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza4.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Chicken Pizza - Delivery</p>
+                                <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza4.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Margherita Pizza - Delivery
+                                </p>
+                                <p class="navbar_search_box_food_popup_content_text_p">Dish</p>
+                            </div>
+                        </div>
+                        <div class="navbar_search_box_food_popup_content navbar_popup_hover">
+                            <img class="navbar_search_box_food_popup_content_img" src="./assets/pizza4.avif">
+                            <div class="navbar_search_box_food_popup_content_text">
+                                <p class="navbar_search_box_food_popup_content_text_h">Pizza On My Mind</p>
+                                <p class="navbar_search_box_food_popup_content_text_p">Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="search_section" class="search_section">
+            <div class="search_section_add">
+                <img class="search_section_add_svg" src="./assets/location.svg">
+                <p class="search_section_add_text"> Gujarat Housing Society, Chandkheda </p>
+            </div>
+            <div class="search_section_food">
+                <img class="search_section_food_svg" src="./assets/search.svg">
+            </div>
+            <div class="search_for_res_cui_dish">
+                <img src="./assets/search.svg">
+                <p>Search for restaurant, cuisine or a dish</p>
+            </div>
+        </section>
+
+
+
+        <!-- address path section  -->
+
+        <section id="services_section" class="services_section">
+            <div class="service_section_path">
+                <p class="service_section_path_link service_section_link_hover">Home</p>
+                <span>/</span>
+                <p class="service_section_path_link service_section_link_hover">India</p>
+                <span>/</span>
+                <p class="service_section_path_link service_section_link_hover">Ahmedabad</p>
+                <span>/</span>
+                <p class="service_section_path_link services_section_inactive_link">North Ahmedabad Restaurants</p>
+            </div>
+        </section>
+
+
+        <!-- dining out, delivery, nightlife buttons section -->
+
+        <section class="service_section_buttons">
+            <!-- dining_out_button -->
+            <div id="dining_out_button" class="service_section_button">
+                <div class="service_section_buttons_img_outer">
+                    <img class="service_section_buttons_img1" src="">
+                </div>
+                <p class="service_section_buttons_text">
+                    Dining Out
+                </p>
+                <div class="border-bottom"></div>
+            </div>
+            <!-- delivery_button -->
+            <div id="delivery_button" class="service_section_button delivery_button">
+                <div class="service_section_buttons_img_outer">
+                    <img class="service_section_buttons_img2" src="">
+                </div>
+                <p class="service_section_buttons_text">
+                    Delivery
+                </p>
+                <div class="border-bottom"></div>
+            </div>
+            <!-- nightlife_button -->
+            <div id="nightlife_button" class="service_section_button ">
+                <div class="service_section_buttons_img_outer">
+                    <img class="service_section_buttons_img3" src="">
+                </div>
+                <p class="service_section_buttons_text">
+                    Nightlife
+                </p>
+                <div class="border-bottom"></div>
+            </div>
+        </section>
+
+
+
+        <div class="seperator"></div>
+
+
+        <!-- filters section -->
+
+        <section id="filter" class="filter">
+            <div class="filter_buttons">
+                <div id="filter_btn" class="filter_button" style="order: -1;">
+                    <img src="./assets/filter.svg">
+                    <!-- <p class="selected_count">1</p> -->
+                    <p>Filters</p>
+                </div>
+                <!-- <div class="filter_button">
+                    <img src="./assets/arrow-up-down.svg">
+                    <p>Cost: High to Low</p>
+                    <img class="remove_selection" src="./assets/close.svg">
+                </div> -->
+                <div id="rating_btn" class="filter_button" onclick="onRatingBtnClick()">
+                    <p>Rating: 4.0+</p>
+                    <img class="remove_selection" src="./assets/close.svg">
+                </div>
+                <div id="pure_veg_btn" class="filter_button" onclick="onVegBtnClick()">
+                    <p>Pure Veg</p>
+                    <img class="remove_selection" src="./assets/close.svg">
+                </div>
+                <div id="cuisines_btn" class="filter_button" style="order: 2;">
+                    <p>Cuisines</p>
+                    <img src="./assets/gray_downarrow.svg" onclick="filterCuisineBtn()">
+                    <div class="cuisine_modal">
+                        <div class="cuisine_model_body">
+                            <p class="cuisine_modal_header">Cuisines</p>
+                            <div class="modal_search_cusines">
+                                <img class="cuisine_modal_search" src="./assets/search.svg" alt="">
+                                <input class="cuisine_modal_input" placeholder="Search here" type="text">
+                                <img class="cuisine_modal_close" src="./assets/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="cuisine_model_footer">
+                            <button class="filter_model_footer_button_clear" onclick="onCuisineApply()">
+                                Clear all</button>
+                            <button class="filter_model_footer_button_apply" onclick="onCuisineApply()">
+                                Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="seperator"></div>
+
+
+        <!-- filter modal center of the screen -->
+
+        <div id="filter_overlay" class="filter_overlay">
+            <div class="filter_model">
+                <div class="filter_model_header">
+                    <p class="filter_model_header_text">Filters</p>
+                    <img class="filter_model_header_svg" src="./assets/close.svg" onclick="closeFilterModal()">
+                </div>
+                <div class="filter_model_body">
+                    <div class="filter_model_body_sidebar">
+                        <div id="sidebarBtnSort" class="filter_model_body_sidebar_filterby sidebar_active_button">
+                            <div class="left_border"></div>
+                            <div class="filter_model_body_sidebar_filterby_content">
+                                <p class="filter_model_side_content_text1">Sort by</p>
+                                <p class="sub_text">Popularity</p>
+                            </div>
+                        </div>
+
+                        <div id="sidebarBtnCuisine" class="filter_model_body_sidebar_filterby">
+                            <div class="left_border"></div>
+                            <p class="filter_model_side_content_text1">Cuisines</p>
+                        </div>
+                        <div id="sidebarBtnRating" class="filter_model_body_sidebar_filterby ">
+                            <div class="left_border"></div>
+                            <p class="filter_model_side_content_text1">Rating</p>
+                        </div>
+                        <div id="sidebarBtnCost" class="filter_model_body_sidebar_filterby">
+                            <div class="left_border"></div>
+                            <p class="filter_model_side_content_text1">Cost per person</p>
+                        </div>
+
+                    </div>
+
+                    <div class="content_sortby">
+                        <!-- <div class="content_sortby_radio">
+                            <input class="radio" type="radio" name="sort_by" id="popularity" value="Popularity" checked
+                                onclick="onRadioClick(event)">
+                            <span for="popularity" class="label">Popularity</span>
+                        </div>
+                        <div class="content_sortby_radio">
+                            <input class="radio" type="radio" name="sort_by" id="rating" value="Rating: High to Low"
+                                onclick="onRadioClick(event)">
+                            <span class="label">Rating: High to Low</span>
+                        </div>
+                        <div class="content_sortby_radio">
+                            <input class="radio" type="radio" name="sort_by" id="deliveryTime" value="Delivery Time"
+                                onclick="onRadioClick(event)">
+                            <span class="label">Delivery Time</span>
+                        </div>
+                        <div class="content_sortby_radio">
+                            <input class="radio" type="radio" name="sort_by" id="costLtoH" value="Cost: Low to High"
+                                onclick="onRadioClick(event)">
+                            <span class="label">Cost: Low to High</span>
+                        </div>
+                        <div class="content_sortby_radio">
+                            <input class="radio" type="radio" name="sort_by" id="costHtoL" value="Cost: High to Low"
+                                onclick="onRadioClick(event)">
+                            <span class="label">Cost: High to Low</span>
+                        </div> -->
+                    </div>
+
+                    <div class="content_cuisines">
+                        <div class="search_cusines">
+                            <img class="search" src="./assets/search.svg" alt="">
+                            <input class="text" placeholder="Search here" type="text">
+                            <img class="close" src="./assets/close.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="content_rating">
+                        <div class="content_rating_rate_head">
+                            <p class="head">Rating</p>
+                            <p class="text">Any</p>
+                        </div>
+
+                        <div class="rate_bar_box">
+
+                            <!-- <div class="rating">
+                                <div class="dot active_big_dot" onclick="onRatingDotClick(event)"></div>
+                                <p>Any</p>
+                            </div>
+                            <div id="rate_bar_0" class="rate_bar active_bar">
+                            </div>
+
+                            <div class="rating">
+                                <div class="dot active_dot" onclick="onRatingDotClick(event)"></div>
+                                <p>3.5</p>
+                            </div>
+                            <div id="rate_bar_3.5" class="rate_bar active_bar">
+                            </div>
+
+                            <div class="rating">
+                                <div class="dot active_dot" onclick="onRatingDotClick(event)"></div>
+                                <p>4.0</p>
+                            </div>
+                            <div id="rate_bar_4.0" class="rate_bar active_bar">
+                            </div>
+
+                            <div class="rating">
+                                <div class="dot active_dot" onclick="onRatingDotClick(event)"></div>
+                                <p>4.5</p>
+                            </div>
+                            <div id="rate_bar_4.5" class="rate_bar active_bar">
+                            </div>
+
+                            <div class="rating">
+                                <div class="dot active_dot"></div>
+                                <p>5.0</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+
+                    <div class="content_cost">
+                        <p class="head">Cost per person</p>
+                        <p class="text">Any - Any</p>
+                    </div>
+
+                </div>
+                <div class="filter_model_footer">
+                    <button class="filter_model_footer_button_clear" id="filter_modal_clear"
+                        onclick="clearFilters()">Clear all</button>
+                    <button class="filter_model_footer_button_apply" id="filter_modal_apply"
+                        onclick="applyFilters()">Apply
+                        <img src="./assets/triangle.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inspiration food carousel section  -->
+
+        <section class="inspiration_first_order_section">
+            <div class="carousel_container">
+                <p class="section_title">Inspiration for your first order</p>
+                <button id="inspiration_prev" class="carousel_prev">
+                    <img src="./assets/angle-left.svg" />
+                </button>
+                <div id="inspiration_slides" class="carousel_slides">
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/thali.avif" alt="Thali">
+                        <p class="carousel_img_name"> Thali </p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/pizza.avif" alt="Pizza">
+                        <p class="carousel_img_name"> Pizza </p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/biryani.avif" alt="Biryani">
+                        <p class="carousel_img_name"> Biryani </p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets//burger.avif" alt="Burger">
+                        <p class="carousel_img_name"> Burger</p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/chicken.avif" alt="Chicken">
+                        <p class="carousel_img_name"> Chicken</p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/cake.avif" alt="Cake">
+                        <p class="carousel_img_name">Cake </p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/paneer.avif" alt="Paneer">
+                        <p class="carousel_img_name">Paneer </p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/northIndian.avif" alt="North Indian">
+                        <p class="carousel_img_name"> North Indian</p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/roll.avif" alt="Rolls">
+                        <p class="carousel_img_name"> Rolls</p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/dosa.avif" alt="Dosa">
+                        <p class="carousel_img_name"> Dosa</p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/sandwich.avif" alt="Sandwich">
+                        <p class="carousel_img_name"> Sandwich</p>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel_img" src="./assets/paratha.avif" alt="Paratha">
+                        <p class="carousel_img_name"> Paratha</p>
+                    </div>
+                </div>
+                <button id="inspiration_next" class="carousel_next">
+                    <img src="./assets/angle-right.svg" alt="next">
+                </button>
+            </div>
+            <button class="carousel_see_more" onclick="onClickSeeMore()">
+                see more
+                <img class="carousel_see_more_svg" src="./assets/down-arrow.svg">
+            </button>
+        </section>
+
+        <section class="track_delivery_door">
+            <img class="track_delivery_door_img" src="./assets/trackDelivery.avif" alt="Track Delivery to your door">
+        </section>
+        <!-- top brands carousel section -->
+
+        <section class="top_brands_section">
+            <div class="carousel_container">
+                <p class="section_title">Top brands for you</p>
+                <button id="top_brands_prev" class="carousel_prev">
+                    <img src="./assets/angle-left.svg">
+                </button>
+                <div class="carousel_slides top_brands_slides">
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets/macd.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> McDonald's </p>
+                        <p class="carousel_img_time top_brands_img_time"> 26 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets/gwalia.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> Gwalia Sweets & Fast Food </p>
+                        <p class="carousel_img_time top_brands_img_time"> 25 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets/lapinoz.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> La Pino'z Pizza </p>
+                        <p class="carousel_img_time top_brands_img_time"> 26 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets//burgerking.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> Burger King </p>
+                        <p class="carousel_img_time top_brands_img_time"> 28 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets//dominos.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> Domino's Pizza </p>
+                        <p class="carousel_img_time top_brands_img_time"> 34 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets//subway.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> Subway </p>
+                        <p class="carousel_img_time top_brands_img_time"> 21 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets/honest.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> Honest </p>
+                        <p class="carousel_img_time top_brands_img_time"> 34 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets/kfc.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> KFC </p>
+                        <p class="carousel_img_time top_brands_img_time"> 28 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets/jayBhavaniVadapav.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> Jay Bhavani Vadapav </p>
+                        <p class="carousel_img_time top_brands_img_time"> 21 min </p>
+                    </div>
+                    <div class="carousel_item top_brands_item">
+                        <div class="carousel_img top_brands_img_div">
+                            <img class="carousel_img_img top_brands_img" src="./assets/lamilano.avif">
+                        </div>
+                        <p class="carousel_img_name top_brands_img_name"> La Milano Pizzeria</p>
+                        <p class="carousel_img_time top_brands_img_time"> 27 min </p>
+                    </div>
+
+                </div>
+                <button id="top_brands_next" class="carousel_next">
+                    <img src="./assets/angle-right.svg" />
+                </button>
+            </div>
+        </section>
+
+        <section class="restaurants">
+            <div class="restaurants_sub_div">
+                <p class="section_title">Order food online in Gujarat Housing Society, Chandkheda</p>
+                <div class="restaurants_cards">
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/lapinozres.avif" alt="La Pino'z Pizza">
+                            <!-- <p class="dish_card_promoted">Promoted</p> -->
+                            <p class="dish_card_discount">50% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">La Pino'z Pizza</p>
+                            <div class="dish_card_rating">
+                                <p class="dish_card_rating_text">4.1</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Pizza, Pasta, Italian, Fast Food</p>
+                            <p class="dish_card_rate">₹200 for one</p>
+                        </div>
+                        <p class="dish_card_time">27 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/dominosres.avif" alt="Domino's Pizza">
+                            <!-- <p class="dish_card_promoted">Promoted</p> -->
+                            <p class="dish_card_discount">50% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">Domino's Pizza</p>
+                            <div class="dish_card_rating below_4">
+                                <p class="dish_card_rating_text">3.6</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Pizza, Pasta, Italian, Fast Food</p>
+                            <p class="dish_card_rate">₹300 for one</p>
+                        </div>
+                        <p class="dish_card_time">33 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/overStoryPizza.avif" alt="">
+                            <p class="dish_card_promoted">Promoted</p>
+                            <p class="dish_card_discount">50% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">Oven Story Pizza - Standout Toppings</p>
+                            <div class="dish_card_rating">
+                                <p class="dish_card_rating_text">4.0</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Pizza, Italian, Pasta</p>
+                            <p class="dish_card_rate">₹300 for one</p>
+                        </div>
+                        <p class="dish_card_time">32 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/3StarFryCenter.avif" alt="">
+                            <p class="dish_card_promoted">Promoted</p>
+                            <p class="dish_card_discount">50% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">3 Star Fry Center</p>
+                            <div class="dish_card_rating">
+                                <p class="dish_card_rating_text">4.1</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Pizza, Pasta, Italian, Fast Food</p>
+                            <p class="dish_card_rate">₹150 for one</p>
+                        </div>
+                        <p class="dish_card_time">32 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/spiceAffair.avif" alt="Spice Affair">
+                            <p class="dish_card_promoted">Promoted</p>
+                            <p class="dish_card_discount">20% OFF</p>
+                        </div>
+                        <div class="name_rating below_4">
+                            <p class="dish_card_name">Spice Affair - Hotel German Palace</p>
+                            <div class="dish_card_rating">
+                                <p class="dish_card_rating_text">3.7</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">North Indian, Continental, Italian, Sandwich, Salad, Biryani,
+                                Desserts, Beverages</p>
+                            <p class="dish_card_rate">₹300 for one</p>
+                        </div>
+                        <p class="dish_card_time">38 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/safeDelivery.webp" alt="">
+                            <p class="safe_delivery_text">
+                                Restaurant partner follows WHO protocol
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/roastedBeans.avif" alt="">
+                            <p class="dish_card_promoted">Promoted</p>
+                            <p class="dish_card_discount">10% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">Roasted Beans</p>
+                            <div class="dish_card_rating">
+                                <p class="dish_card_rating_text">4.3</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Cafe, Coffee, Pizza, Sandwich, Fast Food, Shake, Beverages</p>
+                            <p class="dish_card_rate">₹300 for one</p>
+                        </div>
+                        <p class="dish_card_time">28 min</p>
+                        <!-- <div class="seperator"></div>
+                                            <div class="dish_card_safe_delivery">
+                                                <img class="safe_delivery_img"
+                                                    src="./assets/maxSafetyDelivery.avif"
+                                                    alt="">
+                                                <p class="safe_delivery_text">
+                                                    Follows all Max Safety measures to ensure your food is safe
+                                                </p>
+                                            </div> -->
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/burgerkingres.avif" alt="Burger King">
+                            <!-- <p class="dish_card_promoted">Promoted</p> -->
+                            <p class="dish_card_discount">50% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">Burger King</p>
+                            <div class="dish_card_rating">
+                                <p class="dish_card_rating_text">4.1</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Burger, Fast Food, Desserts, Beverages</p>
+                            <p class="dish_card_rate">₹300 for one</p>
+                        </div>
+                        <p class="dish_card_time">33 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/macdres.avif" alt="McDonald's">
+                            <!-- <p class="dish_card_promoted">Promoted</p> -->
+                            <!-- <p class="dish_card_discount">50% OFF</p> -->
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">McDonald's</p>
+                            <div class="dish_card_rating rating_new">
+                                <p class="dish_card_rating_text">New</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Burger, Fast Food, Desserts, Beverages</p>
+                            <p class="dish_card_rate">₹200 for one</p>
+                        </div>
+                        <p class="dish_card_time">24 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/fusionPizza.avif" alt="The Fusion Pizza">
+                            <!-- <p class="dish_card_promoted">Promoted</p> -->
+                            <p class="dish_card_discount">40% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">The Fusion Pizza</p>
+                            <div class="dish_card_rating">
+                                <p class="dish_card_rating_text">4.1</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Pizza, Fast Food</p>
+                            <p class="dish_card_rate">₹200 for one</p>
+                        </div>
+                        <p class="dish_card_time">32 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/behrouzbiryani.avif" alt="Behrouz Biryani">
+                            <!-- <p class="dish_card_promoted">Promoted</p> -->
+                            <p class="dish_card_discount">50% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">Behrouz Biryani</p>
+                            <div class="dish_card_rating below_4">
+                                <p class="dish_card_rating_text">3.8</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Biryani, Kebab, North Indian</p>
+                            <p class="dish_card_rate">₹150 for one</p>
+                        </div>
+                        <p class="dish_card_time">24 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="restaurant_card">
+                        <div class="image_div">
+                            <img class="dish_card_image" src="./assets/behrouzbiryani.avif" alt="Behrouz Biryani">
+                            <!-- <p class="dish_card_promoted">Promoted</p> -->
+                            <p class="dish_card_discount">50% OFF</p>
+                        </div>
+                        <div class="name_rating">
+                            <p class="dish_card_name">Behrouz Biryani</p>
+                            <div class="dish_card_rating below_4">
+                                <p class="dish_card_rating_text">3.8</p>
+                                <img class="dish_card_rating_star" src="./assets/star.svg">
+                            </div>
+                        </div>
+                        <div class="type_rate">
+                            <p class="dish_card_type">Biryani, Kebab, North Indian</p>
+                            <p class="dish_card_rate">₹150 for one</p>
+                        </div>
+                        <p class="dish_card_time">24 min</p>
+                        <div class="seperator"></div>
+                        <div class="dish_card_safe_delivery">
+                            <img class="safe_delivery_img" src="./assets/maxSafetyDelivery.avif" alt="">
+                            <p class="safe_delivery_text">
+                                Follows all Max Safety measures to ensure your food is safe
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="explore_options">
+            <div class="explore_options_div">
+                <p class="explore_options_container_head">
+                    Explore options near me
+                </p>
+                <div id="cuicines_near_me" class="explore_option">
+                    <div class="explore_option_head">
+                        <p class="explore_option_text">
+                            Popular cuisines near me
+                        </p>
+                        <img class="explore_option_img" src="./assets/down-arrow.svg">
+                    </div>
+                    <p class="explore_option_body">
+                        <a class="cusines_near_me">Bakery food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Beverages food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Biryani food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Burger food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Cafe food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Chinese food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Coffee food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Continental food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Desserts food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Gujarati food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Ice Cream food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Italian food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Mughlai food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">North Indian food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Pasta food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Pizza food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Sandwich food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Shake food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">South Indian food near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="cusines_near_me">Street food near me</a>
+
+                    </p>
+                </div>
+                <div id="restaurant_near_me" class="explore_option">
+                    <div class="explore_option_head">
+                        <p class="explore_option_text">
+                            Popular restaurant types near me
+                        </p>
+                        <img class="explore_option_img" src="./assets/down-arrow.svg">
+                    </div>
+                    <div class="explore_option_body">
+                        <a class="restaurant_near_me">Bakeries near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Bars near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Beverage Shops near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Bhojanalya near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Cafés near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Casual Dining near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Dessert Parlors near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Dhabas near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Fine Dining near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Food Courts near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Food Trucks near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Kiosks near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Lounges near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Paan Shop near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Quick Bites near me</a>
+                        <span class="cuisines_seperator"></span>
+                        <a class="restaurant_near_me">Sweet Shops near me</a>
+
+                    </div>
+                </div>
+                <div id="restaurant_chain" class="explore_option">
+                    <div class="explore_option_head">
+                        <p class="explore_option_text">
+                            Top Restaurant Chains
+                        </p>
+                        <img class="explore_option_img" src="./assets/down-arrow.svg">
+                    </div>
+                    <div class="explore_option_body restaurant_chain_body">
+                        <a class="restaurant_chain">Bikanervala</a>
+                        <a class="restaurant_chain">Burger King</a>
+                        <a class="restaurant_chain">Burger Singh</a>
+                        <a class="restaurant_chain">Dunkin' Donuts</a>
+                        <a class="restaurant_chain">KFC</a>
+                    </div>
+                </div>
+                <div id="citis_we_deliver" class="explore_option">
+                    <div class="explore_option_head">
+                        <p class="explore_option_text">
+                            Cities We Deliver To
+                        </p>
+                        <img class="explore_option_img" src="./assets/down-arrow.svg">
+                    </div>
+                    <div class="explore_option_body restaurant_chain_body">
+                        <a class="restaurant_chain">Delhi NCR</a>
+                        <a class="restaurant_chain">Kolkata</a>
+                        <a class="restaurant_chain">Mumbai</a>
+                        <a class="restaurant_chain">Bengaluru</a>
+                        <a class="restaurant_chain">Pune</a>
+                        <a class="restaurant_chain">Hyderabad</a>
+                        <a class="restaurant_chain">Chennai</a>
+                        <a class="restaurant_chain">Lucknow</a>
+                        <a class="restaurant_chain">Kochi</a>
+                        <a class="restaurant_chain">Jaipur</a>
+                        <a class="restaurant_chain">Ahmedabad</a>
+                        <a class="restaurant_chain">Chandigarh</a>
+                        <a class="restaurant_chain">Goa</a>
+                        <a class="restaurant_chain">Indore</a>
+                        <a class="restaurant_chain">Gangtok</a>
+                        <a class="restaurant_chain">Nashik</a>
+                        <a class="restaurant_chain">Ooty</a>
+                        <a class="restaurant_chain">Shimla</a>
+                        <a class="restaurant_chain">Ludhiana</a>
+                        <a class="restaurant_chain">Guwahati</a>
+                        <a class="restaurant_chain">Amritsar</a>
+                        <a class="restaurant_chain">Kanpur</a>
+                        <a class="restaurant_chain">Allahabad</a>
+                        <a class="restaurant_chain">Aurangabad</a>
+                        <a class="restaurant_chain">Bhopal</a>
+                        <a class="restaurant_chain">Ranchi</a>
+                        <a class="restaurant_chain">Visakhapatnam</a>
+                        <a class="restaurant_chain">Bhubaneswar</a>
+                        <a class="restaurant_chain">Coimbatore</a>
+                        <a class="restaurant_chain">Mangalore</a>
+                        <a class="restaurant_chain">Vadodara</a>
+                        <a class="restaurant_chain">Nagpur</a>
+                        <a class="restaurant_chain">Agra</a>
+                        <a class="restaurant_chain">Dehradun</a>
+                        <a class="restaurant_chain">Mysore</a>
+                        <a class="restaurant_chain">Puducherry</a>
+                        <a class="restaurant_chain">Surat</a>
+                        <a class="restaurant_chain">Varanasi</a>
+                        <a class="restaurant_chain">Patna</a>
+                        <a class="restaurant_chain">Udaipur</a>
+                        <a class="restaurant_chain">Srinagar</a>
+                        <a class="restaurant_chain">Khajuraho</a>
+                        <a class="restaurant_chain">Neemrana</a>
+                        <a class="restaurant_chain">Cuttack</a>
+                        <a class="restaurant_chain">Trivandrum</a>
+                        <a class="restaurant_chain">Haridwar</a>
+                        <a class="restaurant_chain">Leh</a>
+                        <a class="restaurant_chain">Pushkar</a>
+                        <a class="restaurant_chain">Rajkot</a>
+                        <a class="restaurant_chain">Madurai</a>
+                        <a class="restaurant_chain">Kozhikode</a>
+                        <a class="restaurant_chain">Alappuzha</a>
+                        <a class="restaurant_chain">Thrissur</a>
+                        <a class="restaurant_chain">Manipal</a>
+                        <a class="restaurant_chain">Vijayawada</a>
+                        <a class="restaurant_chain">Jodhpur</a>
+                        <a class="restaurant_chain">Kota</a>
+                        <a class="restaurant_chain">Ajmer</a>
+                        <a class="restaurant_chain">Mussoorie</a>
+                        <a class="restaurant_chain">Rishikesh</a>
+                        <a class="restaurant_chain">Jalandhar</a>
+                        <a class="restaurant_chain">Jammu</a>
+                        <a class="restaurant_chain">Manali</a>
+                        <a class="restaurant_chain">Dharamshala</a>
+                        <a class="restaurant_chain see_more">
+                            <p>See more</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer_container">
+                <div class="footer_container_head">
+                    <img class="footer_logo" src="./assets/logo.avif" alt="Zomato">
+                    <div class="country_lang_options">
+                        <div class="drop_down_div">
+                            <div class="drop_down_country_img_div">
+                                <img class="drop_down_country_img" src="./assets/country.avif" alt="India">
+                            </div>
+                            <p class="drop_down_text">India</p>
+                            <img style="width: 15px;" src="./assets/down-arrow.svg">
+                        </div>
+                        <div class="drop_down_div">
+                            <img class="drop_down_img" src="./assets/earth.svg" alt="India">
+                            <p class="drop_down_text">English</p>
+                            <img style="width: 15px;" src="./assets/down-arrow.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="about_container">
+                    <div class="about_zomato">
+                        <p class="about_head"> ABOUT ZOMATO </p>
+                        <div class="about_body">
+                            <p>Who We Are</p>
+                            <p>Blog</p>
+                            <p>Work With Us</p>
+                            <p>Investor Relations</p>
+                            <p>Report Fraud</p>
+                            <p>Press Kit</p>
+                            <p>Contact Us</p>
+                        </div>
+                    </div>
+                    <div class="zomaverse">
+                        <p class="about_head"> ZOMAVERSE</p>
+                        <div class="about_body">
+                            <p>Zomato</p>
+                            <p>Blinkit</p>
+                            <p>Feeding India</p>
+                            <p>Hyperpure</p>
+                            <p>Zomaland</p>
+                        </div>
+                    </div>
+                    <div class="for_restaurants">
+                        <p class="about_head"> FOR RESTAURANTS </p>
+                        <div class="about_body">
+                            <p>Partner With Us</p>
+                            <p>Apps For You</p>
+                        </div>
+                    </div>
+                    <div class="learn_more">
+                        <p class="about_head"> LEARN MORE </p>
+                        <div class="about_body">
+                            <p>Privacy</p>
+                            <p>Security</p>
+                            <p>Terms</p>
+                            <p>Sitemap</p>
+                        </div>
+                    </div>
+                    <div class="social_links">
+                        <div class="social_media_buttons">
+                            <p class="about_head"> SOCIAL LINKS </p>
+                            <div class="social_media">
+                                <img src="./assets/linkedIn.svg">
+                                <img src="./assets/instagram.svg">
+                                <img src="./assets/twitter.svg">
+                                <img src="./assets/youtube.svg">
+                                <img src="./assets/facebook.svg">
+                            </div>
+                        </div>
+
+                        <div class="get_app_btns">
+
+                            <div class="get_app">
+                                <img src="./assets/appstore.webp" alt="App Store">
+                            </div>
+                            <div class="get_app">
+                                <img src="./assets/googlePlay.webp" alt="Google Play">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="seperator"></div>
+                <p class="copyright_text">
+                    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                    Content Policies. All
+                    trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.
+                </p>
+            </div>
+        </section>
+
+        <section id="online_ordering" class="online_ordering">
+            <div class="online_ordering_close" onclick="OnOnlineOrderingClose()">
+                <img class="online_ordering_svg" src="./assets/close.svg">
+            </div>
+            <div class="vertical_seperator"></div>
+            <img class="zomato_img" src="./assets/zomato.avif" alt="zomato">
+            <p class="online_ordering_text">Online ordering is only supported on the Zomato mobile app</p>
+            <p class="order_on_app">Order on App</p>
+        </section>
+
+        <section id="dineDeliverySection" class="dineout_delivery_buttons">
+            <div class="dine_out_btn" onclick="onDiningOut()">
+                <img class="dine_out_btn_img" src="./assets/diningOut.svg"></img>
+                <p class="dine_out_btn_txt">Dining Out</p>
+            </div>
+            <div class="delivery_btn active_btn" onclick="onDelivery()">
+                <img class="delivery_btn_img" src="./assets/delivery.svg"></img>
+                <p class="delivery_btn_txt">Delivery</p>
+            </div>
+        </section>
+
+
+        <button id="back_to_top" class="back_to_top">
+            <img src="./assets/angle-left.svg">
+        </button>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

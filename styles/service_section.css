@@ -1,0 +1,320 @@
+@import "./colors.css";
+
+.services_section {
+  margin: 12px auto;
+  width: 1100px;
+  /* margin-top: 12px; */
+  background-color: white;
+}
+
+.service_section_path {
+  display: flex;
+  gap: 8px;
+  color: var(--lightGray4);
+  font-size: 12px;
+  line-height: 12px;
+  font-style: normal;
+}
+
+.service_section_path_link {
+  text-decoration: none;
+  color: var(--lightGray4);
+  cursor: pointer;
+  /* width: fit-content; */
+}
+
+.service_section_link_hover:hover {
+  cursor: pointer;
+  color: var(--lightPink2);
+}
+
+.services_section_inactive_link {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.service_section_buttons {
+  margin: 0 auto;
+  width: 1100px;
+  display: flex;
+  color: var(--lightGray3);
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  height: 89px;
+  /* gap: 10px; */
+  align-items: center;
+}
+
+.service_section_button {
+  padding: 9px 19px 20px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  /* filter: grayscale(1); */
+}
+
+.service_section_buttons_img_outer {
+  width: 60px;
+  height: 60px;
+  background-color: var(--lightGray9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.service_section_buttons_img1 {
+  content: url("../assets/dining.avif");
+  width: 30px;
+}
+.service_section_buttons_img2 {
+  content: url("../assets/delivery.webp");
+  width: 30px;
+}
+.service_section_buttons_img3 {
+  content: url("../assets/nightlife.webp");
+  width: 30px;
+}
+
+.service_section_buttons_text {
+  font-size: 20px;
+  line-height: 30px;
+  /* color: var(--lightPink2); */
+  color: var(--lightGray3);
+}
+
+.border-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  transform: translateX(-50%);
+  animation: expandBorder 0.3s ease forwards;
+  background-color: var(--lightPink2);
+  display: none;
+}
+
+.dining_out_button > .border-bottom {
+  display: block;
+}
+.dining_out_button > .service_section_buttons_img_outer {
+  background-color: var(--lightCyan);
+}
+.dining_out_button > .service_section_buttons_img_outer > .service_section_buttons_img1 {
+  content: url("../assets/color-dining.avif");
+}
+.dining_out_button > .service_section_buttons_text {
+  color: var(--lightPink2);
+}
+
+.delivery_button > .border-bottom {
+  display: block;
+}
+.delivery_button > .service_section_buttons_img_outer {
+  background-color: var(--lightYellow);
+}
+.delivery_button > .service_section_buttons_img_outer > .service_section_buttons_img2 {
+  content: url("../assets/color-delivery.webp");
+}
+.delivery_button > .service_section_buttons_text {
+  color: var(--lightPink2);
+}
+
+.nightlife_button > .border-bottom {
+  display: block;
+}
+.nightlife_button > .service_section_buttons_img_outer {
+  background-color: var(--lightBlue);
+}
+.nightlife_button > .service_section_buttons_img_outer > .service_section_buttons_img3 {
+  content: url("../assets/color-nightlife.webp");
+}
+.nightlife_button > .service_section_buttons_text {
+  color: var(--lightPink2);
+}
+
+/* .active_service_section_button {
+  box-sizing: content-box;
+  border-bottom: 2px solid var(--lightPink2);
+  color: var(--lightPink2);
+}
+
+.active_service_section_button > .service_section_buttons_img_outer {
+  background-color: var(--lightYello);
+} */
+
+@keyframes expandBorder {
+  0% {
+    width: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  100% {
+    width: 100%;
+    left: 0; /* Expand to both endpoints */
+    transform: none;
+  }
+}
+
+.seperator {
+  height: 0;
+  width: 100%;
+  border: 0.5px solid var(--lightGray9);
+}
+
+.dineout_delivery_buttons {
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+  height: 60px;
+  display: flex;
+  background-color: white;
+  color: var(--lightGray5);
+  display: none;
+}
+
+.dine_out_btn,
+.delivery_btn {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.active_btn {
+  color: var(--lightBlack);
+  border-top: 2px solid var(--lightPink2);
+}
+.active_btn > img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(10%) saturate(5344%) hue-rotate(331deg) brightness(97%) contrast(78%);
+}
+
+.online_ordering {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  display: none;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  transition: 0.2s ease-in;
+}
+.online_ordering_close {
+  padding: 20px 10px;
+  border-right: 1px solid white;
+}
+
+.online_ordering_svg {
+  height: 18px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7445%) hue-rotate(78deg) brightness(106%) contrast(100%);
+}
+
+/* .vertical_seperator {
+  width: 0;
+  height: 100%;
+  border: 1px solid white;
+} */
+
+.zomato_img {
+  width: 29px;
+  margin: 0 10px;
+}
+
+.online_ordering_text {
+  color: white;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.order_on_app {
+  margin: 0 10px 0 5px;
+  padding: 8px 10px;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 15px;
+  width: 154px;
+  color: var(--pink);
+}
+
+/*/////////////   media 768 and below   ////////////////////*/
+
+@media screen and (max-width: 768px) {
+  .services_section {
+    width: 100%;
+    padding: 20px 24px 0;
+  }
+
+  .service_section_buttons {
+    /* display: none; */
+    /* width: 720px; */
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  /* .seperator {
+    display: none;
+  } */
+
+  /* .online_ordering,
+  .dineout_delivery_buttons {
+    display: flex;
+  } */
+}
+
+/*/////////////   media 425 and below   ////////////////////*/
+
+@media screen and (max-width: 425px) {
+  .services_section {
+    display: none;
+  }
+
+  .service_section_buttons {
+    display: none;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  .order_on_app {
+    width: 125px;
+  }
+
+  .online_ordering,
+  .dineout_delivery_buttons {
+    display: flex;
+  }
+}
+
+/*/////////////   media 375 and below   ////////////////////*/
+
+@media screen and (max-width: 375px) {
+  .services_section {
+    display: none;
+  }
+
+  .service_section_buttons {
+    display: none;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  .order_on_app {
+    width: 154px;
+  }
+
+  .online_ordering,
+  .dineout_delivery_buttons {
+    display: flex;
+  }
+}

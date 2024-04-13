@@ -1,0 +1,380 @@
+@import "./colors.css";
+.inspiration_first_order_section {
+  width: 100%;
+  height: 336px;
+  background-color: var(--lightGray9);
+  padding: 40px 0;
+}
+
+.carousel_container {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section_title {
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--lightBlack);
+}
+
+.carousel_slides {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  align-items: flex-start;
+  margin-top: 32px;
+  /* width: 100%; */
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel_prev,
+.carousel_next {
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  top: 126px;
+  /* left: -17px; */
+  z-index: 1;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+}
+
+.carousel_container > .carousel_prev {
+  left: -17px;
+}
+.carousel_container > .carousel_next {
+  right: -17px;
+}
+
+.carousel_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.carousel_img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.carousel_img_img {
+  height: 118px;
+  width: 117px;
+}
+
+.carousel_img_name {
+  text-align: center;
+  color: var(--lightBlack);
+  margin-top: 6px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.carousel_img_time {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--lightBlack);
+}
+
+.top_brands_section {
+  padding-top: 30px;
+}
+
+.carousel_see_more {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: none;
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid var(--lightGray7);
+  border-radius: 5px;
+  color: var(--lightGray3);
+}
+
+.carousel_see_more_svg {
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+}
+
+.see_more_rotate {
+  transform: rotate(180deg);
+}
+
+.track_delivery_door {
+  display: none;
+}
+
+.track_delivery_door_img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/*/////////////   media 768 and below   ////////////////////*/
+
+@media screen and (max-width: 768px) {
+  .inspiration_first_order_section {
+    /* background-color: white; */
+    padding: 40px 24px;
+  }
+
+  .section_title {
+    /* font-size: 20px; */
+    /* margin-bottom: 15px;
+    line-height: 25px; */
+  }
+  .carousel_img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .carousel_container {
+    width: 100%;
+  }
+
+  .carousel_slides {
+    gap: 40px;
+    height: 220px;
+  }
+
+  .carousel_item {
+    /* margin-right: 15px; */
+  }
+
+  /* .carousel_item:nth-of-type(4n) {
+    margin-right: 0;
+  } */
+
+  .top_brands_section {
+    padding: 40px 24px;
+  }
+
+  /* .top_brands_slides {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .top_brands_slides::-webkit-scrollbar {
+    display: none;
+  }
+  .top_brands_item {
+    width: 90px;
+    margin-right: 20px;
+  }
+
+  .top_brands_item:nth-of-type(4n) {
+    margin-right: 20px;
+  }
+
+  .top_brands_img_div {
+    width: 90px;
+    height: 89px;
+  }
+  .top_brands_img {
+    width: 57px;
+    height: 58px;
+  }
+  .top_brands_img_name {
+    margin: 10px 0;
+    line-height: 18px;
+    font-size: 16px;
+  } */
+}
+
+/*/////////////   media 425 and below   ////////////////////*/
+
+@media screen and (max-width: 425px) {
+  .inspiration_first_order_section {
+    background-color: white;
+    padding: 15px 15px;
+  }
+
+  .section_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 25px;
+  }
+  .carousel_img {
+    height: 74px;
+    width: 74px;
+  }
+
+  .carousel_container {
+    width: 100%;
+  }
+
+  .carousel_prev,
+  .carousel_next {
+    display: none;
+  }
+
+  .carousel_slides {
+    margin-top: 5px;
+    gap: 0px;
+    flex-wrap: wrap;
+    height: 210px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .carousel_item {
+    margin-right: 25px;
+  }
+
+  .carousel_item:nth-of-type(4n) {
+    margin-right: 0;
+  }
+
+  .carousel_img_name {
+    margin-top: 3px;
+    font-size: 13px;
+  }
+
+  .carousel_see_more {
+    display: flex;
+  }
+
+  .track_delivery_door {
+    display: block;
+  }
+
+  .top_brands_section {
+    padding-left: 15px;
+  }
+
+  .top_brands_slides {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .top_brands_slides::-webkit-scrollbar {
+    display: none;
+  }
+  .top_brands_item {
+    width: 90px;
+    margin-right: 20px;
+  }
+
+  .top_brands_item:nth-of-type(4n) {
+    margin-right: 20px;
+  }
+
+  .top_brands_img_div {
+    width: 90px;
+    height: 89px;
+  }
+  .top_brands_img {
+    width: 57px;
+    height: 58px;
+  }
+  .top_brands_img_name {
+    margin: 10px 0;
+    line-height: 18px;
+    font-size: 16px;
+  }
+}
+
+/*/////////////   media 375 and below   ////////////////////*/
+
+@media screen and (max-width: 375px) {
+  .inspiration_first_order_section {
+    background-color: white;
+    padding: 15px 15px;
+  }
+  .section_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 25px;
+  }
+  .carousel_img {
+    height: 75px;
+    width: 75px;
+  }
+
+  .carousel_container {
+    width: 100%;
+  }
+
+  .carousel_prev,
+  .carousel_next {
+    display: none;
+  }
+
+  .carousel_slides {
+    margin-top: 5px;
+    gap: 0px;
+    flex-wrap: wrap;
+    height: 220px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .carousel_item {
+    margin-right: 15px;
+  }
+
+  .carousel_item:nth-of-type(4n) {
+    margin-right: 0;
+  }
+
+  .carousel_img_name {
+    margin-top: 3px;
+    font-size: 13px;
+  }
+
+  .carousel_see_more {
+    display: flex;
+  }
+
+  .track_delivery_door {
+    display: block;
+  }
+
+  .top_brands_section {
+    padding-left: 15px;
+  }
+
+  .top_brands_slides {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .top_brands_slides::-webkit-scrollbar {
+    display: none;
+  }
+  .top_brands_item {
+    width: 90px;
+    margin-right: 20px;
+  }
+
+  .top_brands_item:nth-of-type(4n) {
+    margin-right: 20px;
+  }
+
+  .top_brands_img_div {
+    width: 90px;
+    height: 89px;
+  }
+  .top_brands_img {
+    width: 57px;
+    height: 58px;
+  }
+  .top_brands_img_name {
+    margin: 10px 0;
+    line-height: 18px;
+    font-size: 16px;
+  }
+}

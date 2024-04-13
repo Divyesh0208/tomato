@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+            /* overflow: hidden; */
+        }
+
+        .signup_overlay,
+        .login_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            /* position: relative;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.506);
+            height: 100svh; */
+        }
+
+
+
+        .signup_modal {
+            width: 448px;
+            height: 512px;
+            padding: 0 24px 0;
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            border-radius: 6px;
+            display: none;
+        }
+
+        .signup_modal_head {
+            display: flex;
+            justify-content: space-between;
+            color: var(--lightGray2);
+            font-size: 30px;
+            margin-bottom: 24px;
+            padding: 15px 0 15px;
+        }
+
+        .signup_modal_head>img {
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+        }
+
+
+        .form__group {
+            position: relative;
+            padding: 0;
+            margin-bottom: 25px;
+            height: 48px;
+            /* width: 100%; */
+        }
+
+        .form__field {
+            width: 100%;
+            height: 100%;
+            padding: 7px 0 7px 12px;
+            border: 0;
+            border: 1px solid #9b9b9b;
+            border-radius: 5px;
+            outline: 0;
+            font-size: 18px;
+            color: #212121;
+            /* padding: 7px 0; */
+            background: transparent;
+            transition: border-color 0.2s;
+        }
+
+        .form__field::placeholder {
+            color: transparent;
+        }
+
+        .form__field:placeholder-shown~.form__label {
+            font-size: 18px;
+            cursor: text;
+            top: 13px;
+            /* margin-left: 12px; */
+        }
+
+        label,
+        .form__field:focus~.form__label {
+            position: absolute;
+            top: -7px;
+            left: 12px;
+            display: block;
+            transition: 0.2s;
+            font-size: 14px;
+            color: #9b9b9b;
+            background-color: white;
+            padding: 0 3px;
+        }
+
+        .form__field:focus~.form__label {
+            color: #009999;
+        }
+
+        .form__field:focus {
+            padding-bottom: 6px;
+            border: 2px solid #009999;
+        }
+
+        .signin_policy {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+
+        }
+
+        .signin_policy_checkbox {
+            margin-left: 6px;
+            margin-top: 2px;
+            accent-color: var(--lightPink2);
+        }
+
+        .signin_policy>p {
+            font-size: 13.5px;
+            text-align: start;
+        }
+
+        .signin_policy>p>a {
+            text-decoration: none;
+            color: var(--lightPink2);
+            cursor: pointer;
+        }
+
+        .create_acc_btn {
+            margin-top: 25px;
+            height: 48px;
+            border: none;
+            background-color: var(--lightGray7);
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .create_acc_btn:hover {
+            cursor: pointer;
+        }
+
+        .signin_seperator {
+            height: 0px;
+            position: relative;
+            border: 0.5px solid var(--lightGray7);
+            margin: 23px 0;
+        }
+
+        .signin_seperator>p {
+            position: absolute;
+            width: fit-content;
+            padding: 0px 4px;
+            font-size: 18px;
+            top: -12px;
+            left: 186px;
+            color: var(--lightGray3);
+            background-color: white;
+        }
+
+        .google_signin_btn {
+            height: 40px;
+            width: 100%;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            border: 1px solid var(--lightGray7);
+            border-radius: 5px;
+            background-color: white;
+            justify-content: center;
+        }
+
+        .google_signin_btn:hover {
+            background-color: var(--lightBlue);
+            cursor: pointer;
+        }
+
+        .already_have_account_text {
+            font-size: 18px;
+            color: var(--lightGray3);
+        }
+
+        .already_have_account_text a {
+            text-decoration: none;
+            color: var(--lightPink2);
+        }
+
+        .login_modal {
+            width: 448px;
+            height: 468px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 0 20px;
+        }
+
+        .mobile_field {
+            height: 43px;
+            border: 1px solid var(--lightGray7);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            position: relative;
+        }
+
+        .country_code_field {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .country_code_field:hover {
+            cursor: pointer;
+        }
+
+        .country_flag {
+            height: 20px;
+            width: auto;
+        }
+
+        .country_code {
+            min-width: 50px;
+            color: var(--gray);
+            text-align: end;
+            font-size: 16px;
+        }
+
+        .country_list_popup {
+            position: absolute;
+            top: 43px;
+            padding: 10px;
+            left: 0;
+            max-height: 250px;
+            width: 235px;
+            background-color: white;
+            border-radius: 6px;
+            box-shadow: rgba(28, 28, 28, 0.15) 0px 2px 8px;
+            overflow-y: scroll;
+            z-index: 2;
+            /* display: none; */
+        }
+
+        .list_popup_country_detail {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            height: 50px;
+        }
+
+        .country_list_popup_flag {
+            width: 35px;
+            height: auto;
+        }
+
+        .list_popup_country_detail>.country_name {
+            flex-grow: 1;
+            color: var(--lightGray3);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 15px;
+        }
+
+        .country_list_popup_ccode {
+            text-align: end;
+            width: 50px;
+            border-left: 1px solid var(--lightGray6);
+            padding-left: 10px;
+            font-weight: 500;
+        }
+
+        .mobile_vertical_seperator {
+            width: 0;
+            height: 23px;
+            border: 0.5px solid var(--lightGray6);
+            margin-left: 5px;
+        }
+
+
+
+        .login_mobile_no {
+            flex-grow: 1;
+            margin-left: 13px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+        }
+
+        .login_modal_send_otp {
+            width: 100%;
+            margin-top: 20px;
+            height: 40px;
+            background-color: var(--lightPink2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .login_email_btn {
+            width: 100%;
+            background-color: white;
+            border: 1px solid #9b9b9b;
+            border-radius: 5px;
+            height: 43px;
+            color: var(--lightGray3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 5px 0 25px 0;
+        }
+
+        .login_modal_new_signin {
+            color: var(--lightGray3);
+            font-size: 18px;
+        }
+
+        .login_modal_new_signin>a {
+            color: var(--lightPink2);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="signup_modal">
+            <div class="signup_modal_head">
+                <p>Sign up</p>
+                <img src="./assets/close.svg">
+            </div>
+
+            <div class="form__group">
+                <input type="text" class="form__field" placeholder="Full Name">
+                <label class="form__label">Full Name</label>
+            </div>
+
+            <div class="form__group">
+                <input type="email" class="form__field" placeholder="Email">
+                <label class="form__label">Email</label>
+            </div>
+
+            <div class="signin_policy">
+                <input class="signin_policy_checkbox" type="checkbox">
+                <p>I agree to zomato's&nbsp;<a href="#">Terms of Service</a>,&nbsp;<a href="#">Privacy
+                        Policy</a>&nbsp;and&nbsp;<a href="#">Content
+                        Policies</a></p>
+            </div>
+
+            <button class="create_acc_btn">Create account</button>
+
+            <div class="signin_seperator">
+                <p>or</p>
+            </div>
+
+            <button class="google_signin_btn">
+                <img class="" src="./assets/google.svg">
+                Sign in with Google
+            </button>
+
+            <div class="signin_seperator"></div>
+
+            <p class="already_have_account_text">Already have an account? &nbsp;<a href="#">Log in</a></p>
+
+        </div>
+    </div>
+
+    <div class="overlay">
+
+        <div class="login_modal">
+            <div class="signup_modal_head">
+                <p>Login</p>
+                <img src="./assets/close.svg">
+            </div>
+
+            <div class="mobile_field">
+                <div class="country_code_field">
+                    <img class="country_flag" src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                    <p class="country_code">+91</p>
+                    <img src="./assets/down-arrow.svg" alt="">
+
+                    <div class="country_list_popup">
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India Bharat Hindustan</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                        <div class="list_popup_country_detail">
+                            <img class="country_flag country_list_popup_flag"
+                                src="https://b.zmtcdn.com/images/flags_z10/in.png">
+                            <p class="country_name">India</p>
+                            <!-- <div class="mobile_vertical_seperator"></div> -->
+                            <p class="country_list_popup_ccode">+9134</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_vertical_seperator"></div>
+
+                <input class="login_mobile_no" placeholder="Phone" type="number">
+            </div>
+
+            <button class="login_modal_send_otp"> Send One Time Password </button>
+
+            <div class="signin_seperator">
+                <p>or</p>
+            </div>
+
+            <button class="login_email_btn">
+                <img src="./assets/email.svg">
+                Continue with Email
+            </button>
+
+            <button class="google_signin_btn">
+                <img class="" src="./assets/google.svg">
+                Sign in with Google
+            </button>
+            <br>
+            <div class="signin_seperator"></div>
+
+            <p class="login_modal_new_signin">New to Tomato? &nbsp;<a href="#">Create account</a></p>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

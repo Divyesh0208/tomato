@@ -1,0 +1,136 @@
+@import "./colors.css";
+
+.explore_options {
+  /* height: 492px; */
+  background-color: var(--lightGray10);
+  padding: 50px 0;
+}
+
+.explore_options_div {
+  width: 1100px;
+  /* height: 100%; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  justify-content: center;
+}
+
+.explore_options_container_head {
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--gray);
+}
+
+.footer_logo {
+  width: 132px;
+}
+
+.explore_option {
+  font-size: 20px;
+  /* min-height: 66px; */
+  /* padding: 0 24px; */
+  border: 1px solid var(--lightGray8);
+  color: var(--lightBlack);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-between; */
+  /* justify-content: center; */
+}
+
+.explore_option_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 24px;
+  cursor: pointer;
+}
+
+.explore_option_body {
+  padding: 10px 24px 20px;
+  display: none;
+}
+
+.cusines_near_me,
+.restaurant_near_me,
+.restaurant_chain {
+  text-decoration: none;
+  color: var(--lightGray4);
+  font-size: 16px;
+  line-height: 28.8px;
+  cursor: pointer;
+}
+.cusines_near_me:hover,
+.restaurant_near_me:hover,
+.restaurant_chain:hover {
+  color: var(--gray);
+}
+
+.cuisines_seperator {
+  height: 3px;
+  width: 3px;
+  background-color: var(--lightGray4);
+  border-radius: 50%;
+  margin: 0px 10px 3.5px;
+  display: inline-block;
+}
+
+.restaurant_chain_body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 12px;
+  display: none;
+}
+
+.restaurant_chain {
+  width: 210px;
+}
+
+.see_more > p {
+  color: var(--lightBlack);
+  width: fit-content;
+  border-bottom: 2px solid var(--lightBlack);
+}
+
+/*/////////////   media 768 and below   ////////////////////*/
+
+@media screen and (max-width: 768px) {
+  .explore_options_div {
+    width: 100%;
+    padding: 20px 24px;
+  }
+  .explore_options_container_head {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .restaurant_chain {
+    width: 134px;
+  }
+}
+/*/////////////   media 425 and below   ////////////////////*/
+
+@media screen and (max-width: 425px) {
+  /* .explore_options_div {
+    width: 100%;
+    padding: 20px 24px;
+  } */
+  .explore_options_container_head {
+    font-size: 22px;
+    /* line-height: normal; */
+  }
+}
+
+/*/////////////   media 375 and below   ////////////////////*/
+
+/* @media screen and (max-width: 375px) {
+  .explore_options_div {
+    width: 100%;
+    padding: 20px 24px;
+  }
+  .explore_options_container_head {
+    font-size: 22px;
+    line-height: normal;
+  }
+} */

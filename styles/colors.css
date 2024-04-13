@@ -1,0 +1,31 @@
+:root {
+  --black: #000000;
+  --lightBlack: #1c1c1c;
+  --white: #a28d8d;
+  --blue: #0000ee;
+  --purple: #6c42c1;
+  --gray: #363636;
+  --lightGray1: #3c4043;
+  --lightGray2: #4f4f4f;
+  --lightGray3: #696969;
+  --lightGray4: #828282;
+  --lightGray5: #9c9c9c;
+  --lightGray6: #b5b5b5;
+  --lightGray7: #cfcfcf;
+  --lightGray8: #e8e8e8;
+  --lightGray9: #f8f8f8;
+  --lightGray10: #fcfcfc;
+  --darkPink: #e03546;
+  --pink: #e23744;
+  --lightPink1: #d64155;
+  --lightPink2: #ef4f5f;
+  --lightPink3: #ff7e8b;
+  --blue: #256fef;
+  --lightBlue: #edf4ff;
+  --lightYellow: #fceec0;
+  --green: #267e3e;
+  --lightGreen1: #24963f;
+  --lightGreen2: #3ab757;
+  --lightGreen3: #ebffef;
+  --lightCyan: #e5f3f3;
+}

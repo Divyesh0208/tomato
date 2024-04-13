@@ -1,0 +1,312 @@
+@import "./colors.css";
+
+.footer {
+  height: 481px;
+  background-color: var(--lightGray9);
+}
+
+.footer_container {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.footer_container_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country_lang_options {
+  display: flex;
+  gap: 20px;
+}
+.drop_down_div {
+  display: flex;
+  padding: 11.7px 8px;
+  border: 1px solid var(--lightGray6);
+  align-items: center;
+  border-radius: 6px;
+}
+
+.drop_down_country_img_div {
+  width: 24px;
+  height: 14.7px;
+  overflow: hidden;
+}
+
+.drop_down_country_img {
+  height: 100%;
+  transform: translateX(-68px);
+}
+
+.drop_down_text {
+  margin: 0 5px 0 11px;
+  font-size: 18px;
+  /* line-height: 20px; */
+  color: var(--lightBlack);
+}
+
+.about_container {
+  margin-top: 40px;
+  display: flex;
+  gap: 6.8px;
+  margin-bottom: 55px;
+}
+.about_zomato {
+  width: 201px;
+}
+.about_head {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: black;
+  margin-bottom: 12px;
+}
+.about_body > p {
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+  color: var(--lightGray3);
+  margin-bottom: 5px;
+}
+.about_body > p:hover {
+  color: var(--lightBlack);
+}
+.zomaverse {
+  width: 210.8px;
+}
+.for_restaurants {
+  width: 275px;
+}
+.learn_more {
+  width: 183.3px;
+}
+
+.social_media {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.get_app {
+  width: 137px;
+  margin-bottom: 12px;
+}
+.get_app > img {
+  width: 100%;
+}
+
+.footer_container > .seperator {
+  border-color: var(--lightGray7);
+}
+.copyright_text {
+  margin-top: 23px;
+  color: var(--lightGray2);
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.back_to_top {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  border: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-in;
+  /* opacity: 1; */
+  display: none;
+}
+
+.back_to_top:hover {
+  cursor: pointer;
+  background-color: var(--darkPink);
+}
+
+.back_to_top > img {
+  transform: rotateZ(90deg);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7445%) hue-rotate(78deg) brightness(106%) contrast(100%);
+  width: 30px;
+}
+
+/*/////////////   media 768 and below   ////////////////////*/
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: fit-content;
+    padding: 0 24px 35px;
+  }
+  .footer_container {
+    width: 100%;
+  }
+  .get_app > img {
+    height: 40px;
+    width: 126.5px;
+  }
+}
+
+/*/////////////   media 425 and below   ////////////////////*/
+
+@media screen and (max-width: 425px) {
+  .footer {
+    height: fit-content;
+    padding: 0 10px 142px;
+  }
+  .footer_container {
+    width: 100%;
+  }
+
+  .footer_container_head {
+    flex-flow: wrap;
+  }
+  .drop_down_div {
+    margin-top: 40px;
+  }
+
+  .about_container {
+    flex-flow: wrap;
+    gap: 0;
+  }
+  .about_zomato {
+    width: 207px;
+  }
+  .zomaverse {
+    width: 147px;
+  }
+
+  .for_restaurants {
+    margin-top: 40px;
+    width: 207px;
+  }
+
+  .learn_more {
+    margin-top: 40px;
+    width: 147px;
+  }
+
+  .social_links {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .get_app_btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .social_media_buttons {
+    margin-top: 20px;
+  }
+  .social_media_buttons > .about_head {
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .about_head::first-letter {
+    text-transform: uppercase;
+  }
+
+  .social_media {
+    justify-content: center;
+  }
+
+  .social_media > img {
+    width: 28px;
+  }
+
+  .footer_container > .seperator {
+    display: block;
+    margin-top: -25px;
+  }
+}
+
+/*/////////////   media 375 and below   ////////////////////*/
+
+@media screen and (max-width: 375px) {
+  .footer {
+    height: fit-content;
+    padding: 0 10px 142px;
+  }
+  .footer_container {
+    width: 100%;
+  }
+
+  .footer_container_head {
+    flex-flow: wrap;
+  }
+  .drop_down_div {
+    margin-top: 40px;
+  }
+
+  .about_container {
+    flex-flow: wrap;
+    gap: 0;
+  }
+  .about_zomato {
+    width: 207px;
+  }
+  .zomaverse {
+    width: 147px;
+  }
+
+  .for_restaurants {
+    margin-top: 40px;
+    width: 207px;
+  }
+
+  .learn_more {
+    margin-top: 40px;
+    width: 147px;
+  }
+
+  .social_links {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .get_app_btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .social_media_buttons {
+    margin-top: 20px;
+  }
+  .social_media_buttons > .about_head {
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .about_head::first-letter {
+    text-transform: uppercase;
+  }
+
+  .social_media {
+    justify-content: center;
+  }
+
+  .social_media > img {
+    width: 28px;
+  }
+
+  .footer_container > .seperator {
+    display: block;
+    margin-top: -25px;
+  }
+}
