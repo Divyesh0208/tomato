@@ -62,6 +62,7 @@
   line-height: 28.8px;
   cursor: pointer;
 }
+
 .cusines_near_me:hover,
 .restaurant_near_me:hover,
 .restaurant_chain:hover {
@@ -119,6 +120,9 @@
   .explore_options_container_head {
     font-size: 22px;
     /* line-height: normal; */
+  }
+  .restaurant_chain_body {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
